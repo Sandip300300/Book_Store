@@ -69,3 +69,19 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+.logo{
+    height:500px;
+    width:500px;
+}
+.jumbotron{
+    background:none;
+}
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    white-space:nowrap;
+    line-height:60px;
+   
+    
+}

@@ -1,19 +1,31 @@
 ﻿using System;
 
+
+
 namespace C_Sharpe_Project_Practice
 {
-    class Program
+    
+   
+  public   class Program 
     {
+       
         static void Main(string[] args)
         {
-            int[] a = new int[] { 1, 2, 3, 4 };
-            foreach(int item in a)
-            {
-                Console.WriteLine(item);
-            }
-
-
+            string a, b;
+            Split("Sandip Kumer Mistry", out a, out b);
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            
+        }
+        static void Split( string name,out string firstname,out string lastname)
+        {
+            int i = name.LastIndexOf(' ');
+            firstname = name.Substring(0, i);
+            lastname = name.Substring(i + 1);
 
         }
+
+
     }
+  
 }
